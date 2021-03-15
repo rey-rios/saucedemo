@@ -1,0 +1,15 @@
+{
+  "name": "wla-assessment-1",
+  "version": "1.0.0",
+  "description": "Wizeline Academy - Assessment 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-all-chrome": "testcafe chrome ./page_model/tests"
+  },
+  "author": "reynold.rios@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
