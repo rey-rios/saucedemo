@@ -134,6 +134,33 @@ test('9. Final Order Items', async t => {
         .typeText(CheckoutStepOnePage.zipCodeField, "90210")
         .click(CheckoutStepOnePage.continueButton)
         .expect(CheckoutStepTwoPage.pageTitle.exists).ok()
+        .expect(CheckoutStepTwoPage.cartItemLink.withText(productToSelect).exists).ok()
+
+})
+
+test('10. Complete a purchase', async t => {
+
+    const random = Math.floor(Math.random() * PRODUCTS.length)
+    const productToSelect = PRODUCTS[random]
+    console.log('Product to Select: ' + productToSelect)
+    
+    await t
+        .expect(InventoryPage.pageTitle.exists).ok()
+        .click(InventoryPage.inventoryItemLink.withText(productToSelect))
+        .expect(InventoryItemPage.itemName.exists).ok()
+        .expect(InventoryItemPage.itemName.innerText).eql(productToSelect)
+        .click(InventoryItemPage.addToCartButton)
+        .expect(RightHeaderMenu.cartBadge.innerText).eql('1')
+        .click(RightHeaderMenu.cartLink)
+        .expect(CartPage.cartItemLink.withText(productToSelect).exists).ok()
+        .click(CartPage.checkoutButton)
+        .expect(CheckoutStepOnePage.pageTitle.exists).ok()
+        .typeText(CheckoutStepOnePage.firstNameField, "John")
+        .typeText(CheckoutStepOnePage.lastNameField, "Smith")
+        .typeText(CheckoutStepOnePage.zipCodeField, "90210")
+        .click(CheckoutStepOnePage.continueButton)
+        .expect(CheckoutStepTwoPage.pageTitle.exists).ok()
+        .expect(CheckoutStepTwoPage.cartItemLink.withText(productToSelect).exists).ok()
         .click(CheckoutStepTwoPage.finishButton)
         .expect(CheckoutCompletePage.pageTitle.exists).ok()
 
