@@ -46,10 +46,5 @@ Execute below command in VSCode's terminal to run all the tests in MS Edge:
 </br>`npm run test-all-edge`
 </br></br>Execute below command in VSCode's terminal to run all the tests in MS Edge and generate a HTML execution report*:
 </br>`npm run test-all-edge-with-report`
-</br></br>
-Execute below command in VSCode's terminal to run all the tests in all installed browsers:
-</br>`npm run test-all-all-browsers`
-</br></br>Execute below command in VSCode's terminal to run all the tests in all installed browsers and generate a HTML execution report*:
-</br>`npm run test-all-all-browsers-with-report`
 </br></br>*\*HTML Execution Report will be located in below path:*
 </br>`page_model/reports/report.html`
