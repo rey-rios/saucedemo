@@ -28,7 +28,23 @@ Sauce Demo repo for `https://www.saucedemo.com/`
 ## Running the tests
 Execute below command in VSCode's terminal to run all the tests in Chrome:
 </br>`npm run test-all-chrome`
-</br></br>Execute below command in VSCode's terminal to run all the tests in Chrome and generate a HTML execution report*:
+</br></br>
+Execute below command in VSCode's terminal to run all the tests in Chrome and generate a HTML execution report*:
 </br>`npm run test-all-chrome-with-report`
+</br></br>
+Execute below command in VSCode's terminal to run all the tests in Firefox:
+</br>`npm run test-all-firefox`
+</br></br>Execute below command in VSCode's terminal to run all the tests in Firefox and generate a HTML execution report*:
+</br>`npm run test-all-firefox-with-report`
+</br></br>
+Execute below command in VSCode's terminal to run all the tests in Safari:
+</br>`npm run test-all-safari`
+</br></br>Execute below command in VSCode's terminal to run all the tests in Safari and generate a HTML execution report*:
+</br>`npm run test-all-safari-with-report`
+</br></br>
+Execute below command in VSCode's terminal to run all the tests in MS Edge:
+</br>`npm run test-all-edge`
+</br></br>Execute below command in VSCode's terminal to run all the tests in MS Edge and generate a HTML execution report*:
+</br>`npm run test-all-edge-with-report`
 </br></br>*\*HTML Execution Report will be located in below path:*
 </br>`page_model/reports/report.html`
