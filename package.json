@@ -12,7 +12,9 @@
     "test-all-safari": "testcafe safari ./page_model/tests",
     "test-all-safari-with-report": "testcafe safari ./page_model/tests --reporter html:./page_model/reports/report.html",
     "test-all-edge": "testcafe edge ./page_model/tests",
-    "test-all-edge-with-report": "testcafe edge ./page_model/tests --reporter html:./page_model/reports/report.html"
+    "test-all-edge-with-report": "testcafe edge ./page_model/tests --reporter html:./page_model/reports/report.html",
+    "test-all-all-browsers": "testcafe all ./page_model/tests",
+    "test-all-all-browsers-with-report": "testcafe all ./page_model/tests --reporter html:./page_model/reports/report.html"
   },
   "author": "reynold.rios@gmail.com",
   "license": "ISC",
