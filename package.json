@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test-all-chrome": "testcafe chrome ./page_model/tests"
+    "test-all-chrome": "testcafe chrome ./page_model/tests",
+    "test-all-chrome-with-report": "testcafe chrome ./page_model/tests --reporter html:./page_model/reports/report.html"
   },
   "author": "reynold.rios@gmail.com",
   "license": "ISC",
