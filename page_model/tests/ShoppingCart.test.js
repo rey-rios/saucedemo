@@ -8,6 +8,8 @@ import InventoryItemPage from '../pages/InventoryItemPage'
 import { randomItems } from '../utils/Helpers'
 import LeftHeaderMenu from '../pages/LeftHeaderMenu'
 
+const dataSet = require('../data/TestData.json');
+
 fixture('Inventory feature testing')
     .page `https://www.saucedemo.com/`
     .beforeEach( async (t) => {
@@ -82,4 +84,22 @@ test('6. Add multiple items to the Shopping Cart', async t => {
         .click(RightHeaderMenu.cartLink)
         .expect(CartPage.cartItemLink.withText(productsToSelect[2]).exists).ok()
 
+})
+
+dataSet.forEach(dataSet => {
+    test(`Bonus test (Data Provider). Enter '${dataSet.product}'`, async t => {
+
+        console.log('Product to Select: ' + dataSet.product)
+        
+        await t
+            .expect(InventoryPage.pageTitle.exists).ok()
+            .click(InventoryPage.inventoryItemLink.withText(dataSet.product))
+            .expect(InventoryItemPage.itemName.exists).ok()
+            .expect(InventoryItemPage.itemName.innerText).eql(dataSet.product)
+            .click(InventoryItemPage.addToCartButton)
+            .expect(RightHeaderMenu.cartBadge.innerText).eql('1')
+            .click(RightHeaderMenu.cartLink)
+            .expect(CartPage.cartItemLink.withText(dataSet.product).exists).ok()
+
+    })
 })
