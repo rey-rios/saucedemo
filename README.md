@@ -28,3 +28,7 @@ Sauce Demo repo for `https://www.saucedemo.com/`
 ## Running the tests
 Execute below command in VSCode's terminal to run all the tests in Chrome:
 </br>`npm run test-all-chrome`
+</br></br>Execute below command in VSCode's terminal to run all the tests in Chrome and generate a HTML execution report*:
+</br>`npm run test-all-chrome-with-report`
+</br></br>*\*HTML Execution Report will be located in below path:*
+</br>`page_model/reports/report.html`
