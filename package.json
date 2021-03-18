@@ -6,7 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "test-all-chrome": "testcafe chrome ./page_model/tests",
-    "test-all-chrome-with-report": "testcafe chrome ./page_model/tests --reporter html:./page_model/reports/report.html"
+    "test-all-chrome-with-report": "testcafe chrome ./page_model/tests --reporter html:./page_model/reports/report.html",
+    "test-all-firefox": "testcafe firefox ./page_model/tests",
+    "test-all-firefox-with-report": "testcafe firefox ./page_model/tests --reporter html:./page_model/reports/report.html",
+    "test-all-safari": "testcafe safari ./page_model/tests",
+    "test-all-safari-with-report": "testcafe safari ./page_model/tests --reporter html:./page_model/reports/report.html",
+    "test-all-edge": "testcafe edge ./page_model/tests",
+    "test-all-edge-with-report": "testcafe edge ./page_model/tests --reporter html:./page_model/reports/report.html"
   },
   "author": "reynold.rios@gmail.com",
   "license": "ISC",
