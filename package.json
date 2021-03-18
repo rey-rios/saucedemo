@@ -10,6 +10,7 @@
   "author": "reynold.rios@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "testcafe-reporter-html": "^1.4.6"
   }
 }
