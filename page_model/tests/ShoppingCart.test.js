@@ -23,7 +23,7 @@ test('4. Navigate to the Shopping Cart', async t => {
     await t
         .click(RightHeaderMenu.cartLink)
         .expect(CartPage.pageTitle.exists).ok()
-        .expect(CartPage.pageTitle.innerText).eql('Your Cart')
+        .expect(CartPage.pageTitle.innerText).eql('YOUR CART')
 
 })
 

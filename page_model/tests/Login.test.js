@@ -12,7 +12,7 @@ test('1. Login with a valid user', async t => {
         .useRole(standardUser)
         // Validate navigation to Products page
         .expect(InventoryPage.pageTitle.exists).ok()
-        .expect(InventoryPage.pageTitle.innerText).eql('Products')
+        .expect(InventoryPage.pageTitle.innerText).eql('PRODUCTS')
 
 })
 

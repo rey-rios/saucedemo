@@ -2,7 +2,7 @@ import { Selector } from 'testcafe'
 
 class CheckoutStepOnePage{
     constructor(){
-        this.pageTitle = Selector('.subheader').withText('Your Information')
+        this.pageTitle = Selector('.title').withText('YOUR INFORMATION')
         this.firstNameField = Selector('#first-name')
         this.lastNameField = Selector('#last-name')
         this.zipCodeField = Selector('#postal-code')

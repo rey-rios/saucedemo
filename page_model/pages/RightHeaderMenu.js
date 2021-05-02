@@ -2,8 +2,8 @@ import { Selector } from 'testcafe'
 
 class RightHeaderMenu{
     constructor(){
-        this.cartLink = Selector('.shopping_cart_link.fa-layers.fa-fw')
-        this.cartBadge = Selector('.fa-layers-counter.shopping_cart_badge')
+        this.cartLink = Selector('.shopping_cart_link')
+        this.cartBadge = Selector('.shopping_cart_badge')
     }
 }
 

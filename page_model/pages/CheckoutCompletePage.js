@@ -2,7 +2,7 @@ import { Selector } from 'testcafe'
 
 class CheckoutCompletePage{
     constructor(){
-        this.pageTitle = Selector('.subheader').withExactText('Finish')
+        this.pageTitle = Selector('.title').withText('COMPLETE')
     }
 }
 
